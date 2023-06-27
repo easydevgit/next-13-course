@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.icon-link::before {
+    content: "#";
+    color: blue;
+    font-size: 1.7rem;
+    margin-right: 5px;
+}
