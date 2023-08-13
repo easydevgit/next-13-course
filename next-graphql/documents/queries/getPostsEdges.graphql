@@ -1,0 +1,29 @@
+query GetPostsEdges {
+  posts {
+    edges {
+      node {
+        id
+        title
+        date
+        slug
+        featuredImage {
+          node {
+            id
+            sourceUrl
+            altText
+            mediaDetails {
+              width
+              height
+            }
+          }
+        }
+        author {
+          node {
+            name
+            email
+          }
+        }
+      }
+    }
+  }
+}

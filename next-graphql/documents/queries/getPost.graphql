@@ -1,0 +1,27 @@
+query GetPost($id: ID!) {
+  post(id: $id, idType: SLUG) {
+    id
+    databaseId
+    title
+    uri
+    date
+    content
+    featuredImage {
+      node {
+        id
+        sourceUrl
+        altText
+        mediaDetails {
+          width
+          height
+        }
+      }
+    }
+    author {
+      node {
+        name
+        email
+      }
+    }
+  }
+}
